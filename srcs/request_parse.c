@@ -1,6 +1,6 @@
 #include "RestAPI_client.h"
 
-char *remove_chars(char *src, char *set)
+static char *remove_chars(char *src, char *set)
 {
 	char *result;
 	int size;

@@ -1,6 +1,6 @@
 #include "RestAPI_client.h"
 
-t_addrinfo	*take_addrinfo(char *data)
+static t_addrinfo	*take_addrinfo(char *data)
 {
 	t_addrinfo *info;
 	char *start;
@@ -25,7 +25,7 @@ t_addrinfo	*take_addrinfo(char *data)
 	return (info);
 }
 
-void	check_params(int argc, char **argv)
+static void	check_params(int argc, char **argv)
 {
 	if (argc < 4)
 	{
